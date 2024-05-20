@@ -10,7 +10,7 @@ public:
         cout << "Ibu \"" << nama << "\" ada \n";
     }
     ~ibu() {
-        cout << "ibu \"" << nama << "\" ada \n";
+        cout << "ibu \"" << nama << "\" Tidak ada \n";
     }
     void tambahAnak(anak*);
     void cetakAnak();
@@ -23,4 +23,6 @@ void ibu::cetakAnak() {
     for (auto& a : daftar_anak) {
         cout << a->nama << "\n";
     }
+    cout << endl;
 }
+#endif
